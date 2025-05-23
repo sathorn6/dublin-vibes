@@ -17,6 +17,7 @@
             },
             "Guinness Storehouse": {
                 "walking": 20,
+                "public_transport": 15,
                 "taxi": 10
             },
             "Phoenix Park": {
@@ -25,6 +26,7 @@
             },
             "Fri Location 7pm": {
                 "walking": 15,
+                "public_transport": 10,
                 "taxi": 10
             },
             "Howth": {
@@ -46,6 +48,10 @@
             "Glendalough & Wicklow Mountains": {
                 "tour_bus": 60,
                 "taxi": 70
+            },
+            "DCU Appts": {
+                "public_transport": 30,
+                "taxi": 20
             }
         }
     },
@@ -60,7 +66,49 @@
             "category": "Historical",
             "neighborhood": "Kilmainham"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 25,
+                "taxi": 15
+            },
+            "Guinness Storehouse": {
+                "walking": 18,
+                "public_transport": 10,
+                "taxi": 7
+            },
+            "Phoenix Park": {
+                "public_transport": 20,
+                "taxi": 12
+            },
+            "Fri Location 7pm": {
+                "public_transport": 25,
+                "taxi": 15
+            },
+            "Howth": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Dun Laoghaire": {
+                "public_transport": 45,
+                "taxi": 35
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 55,
+                "taxi": 45
+            },
+            "Malahide": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 70,
+                "taxi": 80
+            },
+            "DCU Appts": {
+                "public_transport": 35,
+                "taxi": 20
+            }
+        }
     },
     {
         "name": "Guinness Storehouse",
@@ -73,7 +121,50 @@
             "category": "Attraction",
             "neighborhood": "The Liberties"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "walking": 20,
+                "public_transport": 15,
+                "taxi": 10
+            },
+            "Kilmainham Gaol": {
+                "walking": 18,
+                "public_transport": 10,
+                "taxi": 7
+            },
+            "Phoenix Park": {
+                "public_transport": 25,
+                "taxi": 15
+            },
+            "Fri Location 7pm": {
+                "public_transport": 20,
+                "taxi": 12
+            },
+            "Howth": {
+                "public_transport": 45,
+                "taxi": 40
+            },
+            "Dun Laoghaire": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 50,
+                "taxi": 45
+            },
+            "Malahide": {
+                "public_transport": 45,
+                "taxi": 40
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 70,
+                "taxi": 80
+            },
+            "DCU Appts": {
+                "public_transport": 30,
+                "taxi": 20
+            }
+        }
     },
     {
         "name": "Phoenix Park",
@@ -81,12 +172,53 @@
             "lat": 53.355,
             "lng": -6.3292
         },
-        "description": "One of Europe's largest city parks, home to deer and \u00c1ras an Uachtar\u00e1in.",
+        "description": "One of Europe's largest city parks, home to deer and Áras an Uachtaráin.",
         "extra": {
             "category": "Park",
             "neighborhood": "Dublin 8"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 30,
+                "taxi": 20
+            },
+            "Kilmainham Gaol": {
+                "public_transport": 20,
+                "taxi": 12
+            },
+            "Guinness Storehouse": {
+                "public_transport": 25,
+                "taxi": 15
+            },
+            "Fri Location 7pm": {
+                "public_transport": 30,
+                "taxi": 20
+            },
+            "Howth": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Dun Laoghaire": {
+                "public_transport": 55,
+                "taxi": 45
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 65,
+                "taxi": 55
+            },
+            "Malahide": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 80,
+                "taxi": 90
+            },
+            "DCU Appts": {
+                "public_transport": 40,
+                "taxi": 25
+            }
+        }
     },
     {
         "name": "Howth",
@@ -99,7 +231,48 @@
             "category": "Day Trip",
             "neighborhood": "Howth Peninsula"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Kilmainham Gaol": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Guinness Storehouse": {
+                "public_transport": 45,
+                "taxi": 40
+            },
+            "Phoenix Park": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Fri Location 7pm": {
+                "public_transport": 45,
+                "taxi": 40
+            },
+            "Dun Laoghaire": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 70,
+                "taxi": 60
+            },
+            "Malahide": {
+                "public_transport": 30,
+                "taxi": 25
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 90,
+                "taxi": 100
+            },
+            "DCU Appts": {
+                "public_transport": 50,
+                "taxi": 40
+            }
+        }
     },
     {
         "name": "Dun Laoghaire",
@@ -107,12 +280,53 @@
             "lat": 53.2932,
             "lng": -6.1373
         },
-        "description": "Seaside town known for its pier walk and Teddy\u2019s Ice Cream.",
+        "description": "Seaside town known for its pier walk and Teddy’s Ice Cream.",
         "extra": {
             "category": "Day Trip",
             "neighborhood": "South Dublin"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 35,
+                "taxi": 30
+            },
+            "Kilmainham Gaol": {
+                "public_transport": 45,
+                "taxi": 35
+            },
+            "Guinness Storehouse": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Phoenix Park": {
+                "public_transport": 55,
+                "taxi": 45
+            },
+            "Fri Location 7pm": {
+                "public_transport": 30,
+                "taxi": 25
+            },
+            "Howth": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 20,
+                "taxi": 15
+            },
+            "Malahide": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 80,
+                "taxi": 90
+            },
+            "DCU Appts": {
+                "public_transport": 50,
+                "taxi": 40
+            }
+        }
     },
     {
         "name": "Dalkey & Killiney",
@@ -125,7 +339,48 @@
             "category": "Day Trip",
             "neighborhood": "South Dublin"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Kilmainham Gaol": {
+                "public_transport": 55,
+                "taxi": 45
+            },
+            "Guinness Storehouse": {
+                "public_transport": 50,
+                "taxi": 45
+            },
+            "Phoenix Park": {
+                "public_transport": 65,
+                "taxi": 55
+            },
+            "Fri Location 7pm": {
+                "public_transport": 35,
+                "taxi": 30
+            },
+            "Howth": {
+                "public_transport": 70,
+                "taxi": 60
+            },
+            "Dun Laoghaire": {
+                "public_transport": 20,
+                "taxi": 15
+            },
+            "Malahide": {
+                "public_transport": 70,
+                "taxi": 60
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 90,
+                "taxi": 100
+            },
+            "DCU Appts": {
+                "public_transport": 60,
+                "taxi": 50
+            }
+        }
     },
     {
         "name": "Glendalough & Wicklow Mountains",
@@ -138,7 +393,48 @@
             "category": "Nature",
             "neighborhood": "Wicklow"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "tour_bus": 60,
+                "taxi": 70
+            },
+            "Kilmainham Gaol": {
+                "tour_bus": 70,
+                "taxi": 80
+            },
+            "Guinness Storehouse": {
+                "tour_bus": 70,
+                "taxi": 80
+            },
+            "Phoenix Park": {
+                "tour_bus": 80,
+                "taxi": 90
+            },
+            "Fri Location 7pm": {
+                "tour_bus": 70,
+                "taxi": 80
+            },
+            "Howth": {
+                "tour_bus": 90,
+                "taxi": 100
+            },
+            "Dun Laoghaire": {
+                "tour_bus": 80,
+                "taxi": 90
+            },
+            "Dalkey & Killiney": {
+                "tour_bus": 90,
+                "taxi": 100
+            },
+            "Malahide": {
+                "tour_bus": 90,
+                "taxi": 100
+            },
+            "DCU Appts": {
+                "tour_bus": 80,
+                "taxi": 90
+            }
+        }
     },
     {
         "name": "Malahide",
@@ -151,7 +447,48 @@
             "category": "Day Trip",
             "neighborhood": "North Dublin"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 35,
+                "taxi": 30
+            },
+            "Kilmainham Gaol": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Guinness Storehouse": {
+                "public_transport": 45,
+                "taxi": 40
+            },
+            "Phoenix Park": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Fri Location 7pm": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Howth": {
+                "public_transport": 30,
+                "taxi": 25
+            },
+            "Dun Laoghaire": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 70,
+                "taxi": 60
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 90,
+                "taxi": 100
+            },
+            "DCU Appts": {
+                "public_transport": 40,
+                "taxi": 30
+            }
+        }
     },
     {
         "name": "DCU Appts",
@@ -169,9 +506,41 @@
                 "public_transport": 30,
                 "taxi": 20
             },
+            "Kilmainham Gaol": {
+                "public_transport": 35,
+                "taxi": 20
+            },
+            "Guinness Storehouse": {
+                "public_transport": 30,
+                "taxi": 20
+            },
+            "Phoenix Park": {
+                "public_transport": 40,
+                "taxi": 25
+            },
             "Fri Location 7pm": {
                 "public_transport": 35,
                 "taxi": 20
+            },
+            "Howth": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Dun Laoghaire": {
+                "public_transport": 50,
+                "taxi": 40
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 60,
+                "taxi": 50
+            },
+            "Malahide": {
+                "public_transport": 40,
+                "taxi": 30
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 80,
+                "taxi": 90
             }
         }
     },
@@ -186,6 +555,48 @@
             "category": "Bar",
             "neighborhood": "Camden Street"
         },
-        "travel_times": {}
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "walking": 15,
+                "public_transport": 10,
+                "taxi": 10
+            },
+            "Kilmainham Gaol": {
+                "public_transport": 25,
+                "taxi": 15
+            },
+            "Guinness Storehouse": {
+                "public_transport": 20,
+                "taxi": 12
+            },
+            "Phoenix Park": {
+                "public_transport": 30,
+                "taxi": 20
+            },
+            "Howth": {
+                "public_transport": 45,
+                "taxi": 40
+            },
+            "Dun Laoghaire": {
+                "public_transport": 30,
+                "taxi": 25
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 35,
+                "taxi": 30
+            },
+            "Malahide": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 70,
+                "taxi": 80
+            },
+            "DCU Appts": {
+                "public_transport": 35,
+                "taxi": 20
+            }
+        }
     }
 ]

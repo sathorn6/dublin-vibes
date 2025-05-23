@@ -96,6 +96,20 @@ body {
     display: inline-block;
 }
 
+.travel-label div {
+    background: rgba(0,0,0,0.82);
+    color: #fff;
+    font-size: 0.68em;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-weight: 500;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.18);
+    pointer-events: none;
+    display: inline-block;
+    border: 1px solid #4FC3F7;
+}
+
 @media (max-width: 600px) {
     #map, #info {
         width: 98vw;
