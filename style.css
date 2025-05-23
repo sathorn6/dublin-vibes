@@ -99,7 +99,7 @@ body {
   align-items: center;
   gap: 4px;
   min-width: unset;
-  width: auto;
+  width: min-content;
 }
 .poi-label-content .poi-location-dot {
   width: 7px;
@@ -116,15 +116,12 @@ body {
   margin: 0 0 1px 0;
   text-shadow: 0 2px 6px #000, 0 0px 2px #000;
   color: #fff;
-  background: none;
 }
 .travel-times-mini {
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1px;
-  background: none;
   width: 100%;
 }
 .travel-times-mini-col {
@@ -133,26 +130,11 @@ body {
   align-items: center;
   gap: 4px;
   width: 100%;
-  background: none;
-  margin: 0;
 }
 .icon-time-mini {
   font-size: 0.82em;
   padding: 0 1px;
   color: #fff;
   text-shadow: 0 2px 6px #000, 0 0px 2px #000;
-  background: none;
-  border-radius: 0;
-  margin: 0;
-  line-height: 1.2;
-  display: inline;
-  width: auto;
-}
-
-/* Remove backgrounds from old label styles */
-.poi-label div, .travel-label div {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-  padding: 0 !important;
+  line-height: 1.2
 }
