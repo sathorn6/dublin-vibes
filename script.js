@@ -56,10 +56,47 @@ pois.forEach(poi => {
 
 function showTravelTimes(selectedPoi) {
     const infoDiv = document.getElementById('info');
-    let html = `<h2>${selectedPoi}</h2><table><tr><th>Destination</th><th>Public Transport (min)</th><th>Taxi (min)</th></tr>`;
+    let html = `<h2>${selectedPoi}</h2><table><tr><th>Destination</th><th>🚍</th><th>🚕</th></tr>`;
     for (const dest in travelTimes[selectedPoi]) {
         html += `<tr><td>${dest}</td><td>${travelTimes[selectedPoi][dest].public}</td><td>${travelTimes[selectedPoi][dest].taxi}</td></tr>`;
     }
     html += '</table>';
     infoDiv.innerHTML = html;
+
+    // Remove existing polylines and labels
+    if (window.travelLines) {
+        window.travelLines.forEach(l => map.removeLayer(l));
+    }
+    window.travelLines = [];
+    if (window.travelLabels) {
+        window.travelLabels.forEach(l => map.removeLayer(l));
+    }
+    window.travelLabels = [];
+
+    // Draw lines and labels to other POIs
+    const fromPoi = pois.find(p => p.name === selectedPoi);
+    window.travelLines = [];
+    window.travelLabels = [];
+    for (const dest in travelTimes[selectedPoi]) {
+        const toPoi = pois.find(p => p.name === dest);
+        if (toPoi) {
+            // Draw line
+            const polyline = L.polyline([
+                [fromPoi.lat, fromPoi.lng],
+                [toPoi.lat, toPoi.lng]
+            ], { color: '#0074D9', weight: 3, opacity: 0.7, dashArray: '5, 10' }).addTo(map);
+            window.travelLines.push(polyline);
+            // Add label at midpoint with icons and much smaller text
+            const midLat = (fromPoi.lat + toPoi.lat) / 2;
+            const midLng = (fromPoi.lng + toPoi.lng) / 2;
+            const label = L.marker([midLat, midLng], {
+                icon: L.divIcon({
+                    className: 'travel-label',
+                    html: `<div><span class='icon-time'>🚍 ${travelTimes[selectedPoi][dest].public}</span><br><span class='icon-time'>🚕 ${travelTimes[selectedPoi][dest].taxi}</span></div>`
+                }),
+                interactive: false
+            }).addTo(map);
+            window.travelLabels.push(label);
+        }
+    }
 }
