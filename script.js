@@ -49,20 +49,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Add POI markers
 pois.forEach(poi => {
-    const marker = L.marker([poi.lat, poi.lng]).addTo(map);
-    marker.bindPopup(`<b>${poi.name}</b>`);
-    marker.on('click', () => showTravelTimes(poi.name));
+    const marker = L.marker([poi.lat, poi.lng], {
+        icon: L.divIcon({
+            className: 'poi-label',
+            html: `<div>${poi.name}</div>`,
+            iconAnchor: [0, 9] // anchor at left edge, vertically centered
+        })
+    }).addTo(map);
+    marker.on('click', () => {
+        showTravelTimes(poi.name);
+        showPoiDetails(poi.name);
+    });
 });
 
 function showTravelTimes(selectedPoi) {
-    const infoDiv = document.getElementById('info');
-    let html = `<h2>${selectedPoi}</h2><table><tr><th>Destination</th><th>🚍</th><th>🚕</th></tr>`;
-    for (const dest in travelTimes[selectedPoi]) {
-        html += `<tr><td>${dest}</td><td>${travelTimes[selectedPoi][dest].public}</td><td>${travelTimes[selectedPoi][dest].taxi}</td></tr>`;
-    }
-    html += '</table>';
-    infoDiv.innerHTML = html;
-
     // Remove existing polylines and labels
     if (window.travelLines) {
         window.travelLines.forEach(l => map.removeLayer(l));
@@ -99,4 +99,19 @@ function showTravelTimes(selectedPoi) {
             window.travelLabels.push(label);
         }
     }
+}
+
+function showPoiDetails(poiName) {
+    const poi = pois.find(p => p.name === poiName);
+    if (!poi) return;
+    const detailsPane = document.getElementById('poi-details');
+    const gmapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(poi.lat + ',' + poi.lng)}`;
+    detailsPane.innerHTML = `
+        <div class="details-content">
+            <h3>${poi.name}</h3>
+            <p>Latitude: ${poi.lat.toFixed(4)}, Longitude: ${poi.lng.toFixed(4)}</p>
+            <a href="${gmapsUrl}" target="_blank" rel="noopener" class="gmaps-link">Open in Google Maps</a>
+        </div>
+    `;
+    detailsPane.style.display = 'block';
 }
