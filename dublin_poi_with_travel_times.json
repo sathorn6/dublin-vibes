@@ -1,0 +1,191 @@
+[
+    {
+        "name": "Trinity College & Book of Kells",
+        "coordinates": {
+            "lat": 53.3438,
+            "lng": -6.2546
+        },
+        "description": "Historic university with a famous library and medieval manuscript.",
+        "extra": {
+            "category": "Cultural",
+            "neighborhood": "City Centre"
+        },
+        "travel_times": {
+            "Kilmainham Gaol": {
+                "public_transport": 25,
+                "taxi": 15
+            },
+            "Guinness Storehouse": {
+                "walking": 20,
+                "taxi": 10
+            },
+            "Phoenix Park": {
+                "public_transport": 30,
+                "taxi": 20
+            },
+            "Fri Location 7pm": {
+                "walking": 15,
+                "taxi": 10
+            },
+            "Howth": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Dun Laoghaire": {
+                "public_transport": 35,
+                "taxi": 30
+            },
+            "Dalkey & Killiney": {
+                "public_transport": 40,
+                "taxi": 35
+            },
+            "Malahide": {
+                "public_transport": 35,
+                "taxi": 30
+            },
+            "Glendalough & Wicklow Mountains": {
+                "tour_bus": 60,
+                "taxi": 70
+            }
+        }
+    },
+    {
+        "name": "Kilmainham Gaol",
+        "coordinates": {
+            "lat": 53.3419,
+            "lng": -6.3096
+        },
+        "description": "Former prison turned museum, key to Irish independence history.",
+        "extra": {
+            "category": "Historical",
+            "neighborhood": "Kilmainham"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Guinness Storehouse",
+        "coordinates": {
+            "lat": 53.3419,
+            "lng": -6.2869
+        },
+        "description": "Iconic brewery with self-guided tours and rooftop bar.",
+        "extra": {
+            "category": "Attraction",
+            "neighborhood": "The Liberties"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Phoenix Park",
+        "coordinates": {
+            "lat": 53.355,
+            "lng": -6.3292
+        },
+        "description": "One of Europe's largest city parks, home to deer and \u00c1ras an Uachtar\u00e1in.",
+        "extra": {
+            "category": "Park",
+            "neighborhood": "Dublin 8"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Howth",
+        "coordinates": {
+            "lat": 53.3881,
+            "lng": -6.0639
+        },
+        "description": "Scenic coastal village with cliff walks and seafood.",
+        "extra": {
+            "category": "Day Trip",
+            "neighborhood": "Howth Peninsula"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Dun Laoghaire",
+        "coordinates": {
+            "lat": 53.2932,
+            "lng": -6.1373
+        },
+        "description": "Seaside town known for its pier walk and Teddy\u2019s Ice Cream.",
+        "extra": {
+            "category": "Day Trip",
+            "neighborhood": "South Dublin"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Dalkey & Killiney",
+        "coordinates": {
+            "lat": 53.2766,
+            "lng": -6.1058
+        },
+        "description": "Charming village with coastal views and cliff walks.",
+        "extra": {
+            "category": "Day Trip",
+            "neighborhood": "South Dublin"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Glendalough & Wicklow Mountains",
+        "coordinates": {
+            "lat": 53.0102,
+            "lng": -6.3277
+        },
+        "description": "Monastic site with lakes and scenic hiking trails.",
+        "extra": {
+            "category": "Nature",
+            "neighborhood": "Wicklow"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "Malahide",
+        "coordinates": {
+            "lat": 53.4508,
+            "lng": -6.1543
+        },
+        "description": "Coastal town with a castle and gardens.",
+        "extra": {
+            "category": "Day Trip",
+            "neighborhood": "North Dublin"
+        },
+        "travel_times": {}
+    },
+    {
+        "name": "DCU Appts",
+        "coordinates": {
+            "lat": 53.3861,
+            "lng": -6.2568
+        },
+        "description": "Dublin City University accommodation with twin rooms and common areas.",
+        "extra": {
+            "category": "Accommodation",
+            "neighborhood": "Glasnevin"
+        },
+        "travel_times": {
+            "Trinity College & Book of Kells": {
+                "public_transport": 30,
+                "taxi": 20
+            },
+            "Fri Location 7pm": {
+                "public_transport": 35,
+                "taxi": 20
+            }
+        }
+    },
+    {
+        "name": "Fri Location 7pm",
+        "coordinates": {
+            "lat": 53.3338,
+            "lng": -6.2654
+        },
+        "description": "Ryan's Bar, casual pub on Camden Street, popular Friday night spot.",
+        "extra": {
+            "category": "Bar",
+            "neighborhood": "Camden Street"
+        },
+        "travel_times": {}
+    }
+]
